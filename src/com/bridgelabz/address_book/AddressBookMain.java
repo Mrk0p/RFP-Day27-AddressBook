@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class AddressBookMain {
 
     public static void main(String[] args) {
-
         HashMap<String,AddressBook> dictionary = new HashMap<>();
         AddressBook book = new AddressBook();
         Scanner input = new Scanner(System.in);
@@ -54,7 +53,7 @@ public class AddressBookMain {
                     String addressBookName2 = input.next();
                     if(dictionary.containsKey(addressBookName2)){
                         System.out.println(addressBookName2 + " Address book exist.");
-                        AddressBook addressBook = dictionary.get(addressBookName2);
+                        AddressBook addressBook = dictionary.get(addressBookName2) ;
                         addressBook.displayContact();
                     }
                     else {

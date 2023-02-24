@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class AddressBookMain {
 
+
     public static void main(String[] args) {
         HashMap<String,AddressBook> dictionary = new HashMap<>();
         AddressBook book = new AddressBook();
@@ -101,7 +102,7 @@ public class AddressBookMain {
                         System.out.println("Enter name of city : ");
                         String cityName = input.next();
                         AddressBook addressBook = dictionary.get(addressBookName5);
-                        addressBook.searchByCityName(cityName);
+                        addressBook.searchByCityName(cityName) ;
                     }
                     else {
                         System.out.println("Address Book does not exist");
@@ -114,7 +115,7 @@ public class AddressBookMain {
                         System.out.println("Enter name of State : ");
                         String stateName = input.next();
                         AddressBook addressBook = dictionary.get(addressBookName6);
-                        addressBook.searchByStateName(stateName);
+                        addressBook.searchByStateName(stateName) ;
                     }
                     else {
                         System.out.println("Address Book does not exist");
@@ -123,6 +124,7 @@ public class AddressBookMain {
                 case 9 :
                     System.out.println("Exiting from dictionary");
                     break;
+
             }
         }while (option != 9);
     }
